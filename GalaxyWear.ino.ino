@@ -1,10 +1,4 @@
-/*
- * GalaxyWear : Liquid Galaxy on FingerTips
- * Developed by Praveen Kumar for Liquid Galaxy
- * What it does ?
- * The code first of all is based on 4*4 Keypad Matrix using Conductive thread.
- * This is the basic matrix used in mobile phones and keypads, but with a novel approach, I've used it using conductive thread on a Wearable Glove.
- */
+
 
  //Declaring the pins assigned for the keypad
   int r1=14;
@@ -92,25 +86,25 @@ void ReadRows()
   // If-elseif Statements beginning
   if(colm1==LOW)
          {
-           Serial.print("Paris");
+           Serial.print("ToneA");
                         digitalWrite(pin,HIGH);
              delay(500);
          }
   else if(colm2==LOW)
          {
-           Serial.print("Bangkok City");
+           Serial.print("ToneB");
            digitalWrite(pin,HIGH);
              delay(500);
          }
    else if(colm3==LOW)
          {
-           Serial.print("Jakarta City");
+           Serial.print("ToneC");
            digitalWrite(pin,HIGH);
              delay(500);
          }
    else if(colm4==LOW)
         {
-          Serial.print("Dhaka City");
+          Serial.print("ToneD");
           digitalWrite(pin,HIGH);
              delay(500);
         }
@@ -120,20 +114,20 @@ void ReadRows()
    delay(100);
    if(colm1==LOW)
          {
-           Serial.print("Washington");
+           Serial.print("ToneE");
           digitalWrite(pin,HIGH);
              delay(500);   
            
          }
    else if(colm2==LOW)
          {
-           Serial.print("Bristol");
+           Serial.print("ToneF");
             digitalWrite(pin,HIGH);
              delay(500);
          }
    else if(colm3==LOW)
          {
-           Serial.print("Clinton");
+           Serial.print("ToneG");
            digitalWrite(pin,HIGH);
              delay(500);
          }
@@ -148,49 +142,49 @@ void ReadRows()
    delay(100);
    if(colm1==LOW)
          {
-           Serial.print("Salem");
+           Serial.print("ToneJ");
            digitalWrite(pin,HIGH);
              delay(500);
          }
    else if(colm2==LOW)
          {
-           Serial.print("Fairview");
+           Serial.print("ToneK");
            digitalWrite(pin,HIGH);
              delay(500);
          }
    else if(colm3==LOW)
          {
-           Serial.print("Greenville");
+           Serial.print("ToneL");
            digitalWrite(pin,HIGH);
              delay(500);
          }
    else if(colm4==LOW)
         {
-          Serial.print("Hyderabad");
+          Serial.print("ToneP");
           delay(1000);
         }
  
    if(colm1==LOW)
          {
-           Serial.print("Jaipur");
+           Serial.print("ToneZ");
           digitalWrite(pin,HIGH);
              delay(500);
          }
    else if(colm2==LOW)
          {
-           Serial.print("Punjab");
+           Serial.print("ToneX");
            digitalWrite(pin,HIGH);
              delay(500);
          }
    else if(colm3==LOW)
          {
-           Serial.print("Bangalore");
+           Serial.print("ToneY");
            digitalWrite(pin,HIGH);
              delay(500);
          }
    else if(colm4==LOW)
         {
-          Serial.print("New Delhi");
+          Serial.print("ToneT");
           delay(1000);
         } 
 }
